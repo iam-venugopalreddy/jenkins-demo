@@ -6,12 +6,12 @@ pipeline {
         PATH = "$dockerHome/bin:$mavenHome/bin:$PATH"
     }
     stages {
-        stage(Chekout) {
+        stage("Chekout") {
             steps {
                 echo "checkout success"
             }
         }
-        stage(Build) {
+        stage("Build") {
             steps {
                 echo "Build_id - $env.BUILD_ID"
                 echo "Build_name - $env.BUILD_NAME"

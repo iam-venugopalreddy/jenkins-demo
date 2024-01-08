@@ -13,6 +13,7 @@ pipeline {
         }
         stage("Build") {
             steps {
+                echo "This is Build stage"
                 echo "Build_id - $env.BUILD_ID"
                 echo "Build_name - $env.BUILD_NAME"
                 echo "Build_tag - $env.BUILD_TAG"
